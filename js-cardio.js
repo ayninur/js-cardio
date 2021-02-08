@@ -14,6 +14,20 @@ const reverseString = (str) => {
     // return str.split('').reduce((acc, curr) => curr + acc)
 
     // Solution 3
-    return str.split('').reverse().join('');
+    // return str.split('').reverse().join('');
+
+    // Solution 4
+    // let reversed = '';
+    // for (let i = 0; i < str.length; i++) {
+    //     reversed = str[i] + reversed
+    // }
+    // return reversed
+
+    // Solution 5
+    // let reversed = '';
+    // for (let char of str) {
+    //     reversed = char + reversed;
+    // }
+    // return reversed
 }
 console.log(reverseString('hello'))
