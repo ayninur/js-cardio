@@ -70,17 +70,27 @@ const isPalindrome = (str) => {
 
 const reverseInt = (int) => {
     // Solution 1
-    // return Number(String(int).split('').reverse().join(''));
+    // return parseInt(String(int).split('').reverse().join('')) * Math.sign(int);
 
     // Soltion 2
-    // return Number(int.toString().split('').reduce((reversed, currVal) => currVal + reversed, ''))
+    // return parseInt(int.toString().split('').reduce((reversed, currVal) => currVal + reversed, '')) * Math.sign(int)
 
     // Solution 3
     // let reversed = '';
     // int = String(int)
-    // for (let i = 0; i < int.length; i++) {
+    // for (let i = int.length - 1; i > 0; i--) {
     //     reversed += int[i];
     // }
-    // return Number(reversed)
+    // return parseInt(reversed) * Math.sign(int)
 }
-console.log(reverseInt(521))
+// console.log(reverseInt(-521))
+
+// Challenge 4: CAPITALIZE LETTERS
+// Return a strinf with the first letter of every word capitalized
+// ex. capitalizeLetters('i love javascript') = 'I Love You Javascript')
+
+// const capitalize = (str) => {
+//     return str.split(' ').map(curr => curr.charAt(0).toUpperCase() + curr.slice(1, str.length).join(' '))
+// }
+
+// console.log(capitalize('i love javascript'))
