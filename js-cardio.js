@@ -89,8 +89,16 @@ const reverseInt = (int) => {
 // Return a strinf with the first letter of every word capitalized
 // ex. capitalizeLetters('i love javascript') = 'I Love You Javascript')
 
-// const capitalize = (str) => {
-//     return str.split(' ').map(curr => curr.charAt(0).toUpperCase() + curr.slice(1, str.length).join(' '))
-// }
+const capitalize = (str) => {
+    // Solution 1
+    // return str.split(' ').map(curr => curr.charAt(0).toUpperCase() + curr.slice(1, str.length)).join(' ')
 
-// console.log(capitalize('i love javascript'))
+    // Solution 2
+    str = str.toLowerCase().split(' ')
+    for (let i = 0; i < str.length; i++) {
+        str[i] = str[i].substring(0, 1).toUpperCase() + str[i].substring(1)
+    }
+    return str
+}
+
+console.log(capitalize('i love javascript'))
