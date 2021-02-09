@@ -112,48 +112,47 @@ const capitalize = (str) => {
 // Return the character that is most common in a string
 // ex. maxCharacter('javascript') === 'a'
 const maxCharacter = (str) => {
-    // // Solution 1
+    // // // Solution 1
     // let charMap = {};
+    // let max = 0;
     // let maxChar = '';
-    // let maxNum = 0;
 
-    // // let max = Math.max.apply('', Object.values(charMap))
     // for (let char of str) {
-    //     if (!charMap[char]) {
-    //         charMap[char] = 1
-    //     } else {
+    //     if (charMap[char]) {
     //         charMap[char]++
+    //     } else if (!charMap[char]) {
+    //         charMap[char] = 1;
     //     }
-
     // }
-    // for (char in charMap) {
-    //     if (charMap[char] > maxNum) {
-    //         maxNum = charMap[char];
-    //         maxChar = char;
 
+    // for (let char in charMap) {
+    //     if (charMap[char] > max) {
+    //         max = charMap[char];
+    //         maxChar = char;
     //     }
     // }
     // return maxChar
-
 }
 
-// console.log(maxCharacter('javascriptttt'))//
+// console.log(maxCharacter('javascript'))
 
 // Challenge 6:Fizbuzz
 // Write a program that prints all the numbers from 1 to 100.For mulitples of 3 instead of the number prints "Fizz" for miltiples of 5 print "buzz" for the numbers that are multiples for both 
 // fizz buzz"
 
 const fizzbuz = (n) => {
-    for (let i = 1; i < n; i++) {
-        if (i % 3 == 0) {
-            console.log("Fizz")
-        } else if (i % 5 === 0) {
-            console.log("Buzz")
-        } else if (i % 15 === 0) {  //else if (i % 3 === 0 && i % 5 === 0) {
-            console.log('FizzBuzz')
-        } else (console.log(i))
-    }
+    // for (let i = 0; i < n; i++) {
+    //     if (i % 3 === 0 && i % 5 === 0) {
+    //         console.log("FizzBuzz")
+    //     } else if (i % 3 === 0) {
+    //         console.log("Fizz")
+    //     } else if (i % 5 === 0) {
+    //         console.log("Buzz")
+    //     } else {
+    //         console.log(i)
+    //     }
+    // }
 
 }
 
-console.log(fizzbuz(100))//
+// console.log(fizzbuz(100))
